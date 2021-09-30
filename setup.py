@@ -12,9 +12,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 cmds_to_run = [
 	"apt-get update",
-    "apt-get install -y chromium-chromedriver",
-    "apt-get install -y chromium-browser",
-    "apt-get install libnspr4 libnss3 libnss3-nssdb libnss3-tools libfontconfig1 libgconf libglib2.0"
+    "apt-get update && apt-get install -y chromium-chromedriver"
 ]
 
 # "cd /home/app/",
