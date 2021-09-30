@@ -12,7 +12,11 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 cmds_to_run = [
 	"apt-get update",
-    "apt-get update && apt-get install -y libnspr4 libnss3 libnss3-tools libfontconfig1 libglib2.0"
+    "apt-get update && apt-get install -y libnspr4 libnss3 libnss3-tools libfontconfig1 libglib2.0",
+    "apt-get install -y libappindicator1 fonts-liberation",
+    "apt-get install -f",
+    "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb",
+    "dpkg -i google-chrome*.deb"
 ]
 
 # "cd /home/app/",
