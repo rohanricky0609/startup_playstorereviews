@@ -12,7 +12,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 cmds_to_run = [
 	"apt-get update",
-    "apt-get update && apt-get install -y google-chrome-stable"
+    "apt-get update && apt-get install libnspr4 libnss3 libnss3-tools libfontconfig1 libglib2.0"
 ]
 
 # "cd /home/app/",
