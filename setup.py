@@ -15,9 +15,10 @@ cmds_to_run = [
     "apt-get update && apt-get install -y libnspr4 libnss3 libnss3-tools libfontconfig1 libglib2.0",
     "apt-get install -y libappindicator1 fonts-liberation",
     "apt-get install -f",
-    "apt-get install -y chromium-browser"
-    # "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb",
-    # "dpkg -i google-chrome*.deb"
+    # "apt-get install -y chromium-browser"
+    "apt-get install -y libasound2 libatk-bridge2.0-0 libatspi2.0-0 libdrm2 libgbm1 libgtk-3-0 libxkbcommon0 libxshmfence1 xdg-utils"
+    "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb",
+    "dpkg -i google-chrome*.deb"
 
 ]
 
