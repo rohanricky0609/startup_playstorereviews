@@ -18,7 +18,7 @@ cmds_to_run = [
     # "apt-get install -y chromium-browser"
     "apt-get install -y libasound2 libatk-bridge2.0-0 libatspi2.0-0 libdrm2 libgbm1 libgtk-3-0 libxkbcommon0 libxshmfence1 xdg-utils"
     "wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb",
-    "dpkg -i google-chrome*.deb"
+    "dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install"
 
 ]
 
@@ -32,7 +32,10 @@ class PostInstallCommand(install):
 	def run(self):
 		install.run(self)
 		for cmd in cmds_to_run:
-			check_call(cmd,shell=True)
+            try:
+			    check_call(cmd,shell=True)
+            except Exception e:
+                pass
 
 
 class CustomDevelopCommand(develop):
