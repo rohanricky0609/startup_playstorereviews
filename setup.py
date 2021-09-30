@@ -12,7 +12,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 cmds_to_run = [
 	"apt-get update",
-    "apt install chromium-chromedriver",
+    "apt-get install -y chromium-chromedriver",
     "apt-get install -y chromium-browser",
     "apt-get install libnspr4 libnss3 libnss3-nssdb libnss3-tools libfontconfig1 libgconf libglib2.0"
 ]
@@ -43,7 +43,7 @@ class CustomEggInfoCommand(egg_info):
 			check_call(cmd,shell=True)
 
 setuptools.setup(
-	name="startup_pip",
+	name="startup_playstorereviews",
 	version="0.0.1",
 	author="Example Author",
 	author_email="author@example.com",
