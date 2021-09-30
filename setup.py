@@ -12,7 +12,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 cmds_to_run = [
 	"apt-get update",
-    "apt-get update && apt-get install -y chromium-chromedriver"
+    "apt-get update && apt-get install -y google-chrome-stable"
 ]
 
 # "cd /home/app/",
